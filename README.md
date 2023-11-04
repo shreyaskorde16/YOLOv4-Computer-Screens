@@ -70,9 +70,16 @@ _**For Testing**_
 
 
 # Result Analysis
+
+  <img src="https://github.com/shreyaskorde16/YOLOv4-Computer-Screens/blob/master/predictions_collage_6.jpg" width="400" height="325" align="right" />
 <p align="justify">
 We mainly concentrate on the accuracy of finding the correct computer screen while minimizing miss detections when analyzing the YOLO model that we have trained for multiple object detection. We initially evaluate the outcomes and map the model's correctness by adjusting the confidence score threshold. The Yolo algorithm divides the image into grid cells before predicting the bounding boxes and class probabilities for each grid cell's objects using the confidence threshold. The confidence threshold is the minimal boundary value required in determining whether or not predicted bounding boxes should be taken into account for valid detection. We were able to acquire the outcome data in the form of video detections by increasing the threshold from 30% to 99%.
-<img src="https://github.com/shreyaskorde16/YOLOv4-Computer-Screens/blob/master/predictions_collage_6" width="350" height="250" align="right" />
 
+<p align="justify">
 We discovered different accuracies for distinct computer screen classes by doing the same procedure for each confidence threshold. The graph of Accuracy vs Threshold is shown below. presents a better concept for getting the best outcomes for a specific threshold with fewer miss detections. 
-<img src="https://github.com/shreyaskorde16/YOLOv4-Computer-Screens/blob/master/" width="350" height="250" align="right" />
+
+
+# **Conclusion**
+<p align="justify">
+  <img src="https://github.com/shreyaskorde16/YOLOv4-Computer-Screens/blob/master/accuracy_vs_thre_final.png" width="400" height="325" align="right" />
+Multiple object detection in images and videos is a difficult task. We employed the YOLO v4 object detection model and successfully used it to locate and track multiple computer screens in an egocentric video of an emergency services dispatch control room. Based on the accuracy vs. threshold graph shown in the accuracy vs threshold Figure above. we are able to conclude that executing the model at a threshold of 65-70 offered the best results, with fewer miss detections. By doing so, we are able to retrieve critical information far faster than a control room operator. As a result, we may reduce human error in emergency service dispatch and increase the efficiency of those working in the control room. This device identifies computer screens with an accuracy that varies between 98 and 99 percent. If the video contains other computer screens, such as a laptop screen with different information on it or a mobile phone, our model will struggle to track them because it has not been trained to recognize laptop and mobile phone screens.
