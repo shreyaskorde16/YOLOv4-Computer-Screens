@@ -1,6 +1,6 @@
 
 # **Multiple Object Tracking in video Using Deep learning**
----
+
 
 
 `YOLOv4_custom_v3`: Python script to train and evaluate the yolov4 model
@@ -22,14 +22,15 @@ In this research project, the goal is to develop a deep learning method, specifi
 <img src="https://github.com/shreyaskorde16/YOLOv4-Computer-Screens/blob/master/flowchart.png" alt="Flowchart"  title="Flowchart" width="500" height="500" align="centre" />
 
 <p align="justify">
-YOLOv4 is a well-known object detection algorithm with several enhancements over previous versions. It is chosen for its accuracy, real-time performance, and the ability to detect a wide range of object classes. YOLOv4 incorporates features like feature pyramid networks (FPN), spatial attention modules, data augmentation, and more to improve object detection. First, frame by frame, the images are taken out of the control room video clip as shown in Figure Image data. 
+YOLOv4 is a well-known object detection algorithm with several enhancements over previous versions. It is chosen for its accuracy, real-time performance, and the ability to detect a wide range of object classes. YOLOv4 incorporates features like feature pyramid networks (FPN), spatial attention modules, data augmentation, and more to improve object detection. First, frame by frame, the images are taken out of the control room video clip as shown in Figure Image data.  
+  <p align="justify">
 <img src="https://github.com/shreyaskorde16/YOLOv4-Computer-Screens/blob/master/image_data.jpg" width="350" height="250" align="right" /> Later, the labelimg tool is used to label each of these images by creating rectangular bounding boxes and assigning classes to all of the objects of interest.  
 I have trained the YOLO algorithm on a custom dataset containing images of computer screens in the control room. This unique dataset is essential because it's specific to the project's requirements, which involve recognizing multiple objects in a single frame. The YOLOv4 model is trained on this dataset and then evaluated for its performance in detecting and tracking objects in the control room footage.  As the model receives images, Images are fed into convolutional downsampling, after layers of dense connection blocks that perform various operations and calculations. The outputs from these blocks are now transferred to object detection to distinguish between the various classes in a picture before passing via a spatial pyramid pooling layer to broaden receptive fields.
 
 
 # Methods
 
-<img src="https://github.com/shreyaskorde16/YOLOv4-Computer-Screens/blob/master/label_img.png" width="350" height="250" align="right" />
+<img src="https://github.com/shreyaskorde16/YOLOv4-Computer-Screens/blob/master/label_img.png" width="400" height="300" align="right" />
 <p align="justify">
   
 We used the __[labelimg tool](https://github.com/HumanSignal/labelImg)__ to annotate the images as shown on the right side and provide labels to the bounding boxes when creating the dataset. For the creation of an excellent dataset that can effectively train the model, it is essential to select high-quality, well-balanced images.
