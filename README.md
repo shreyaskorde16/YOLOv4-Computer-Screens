@@ -1,7 +1,5 @@
-
 # **Multiple Object Tracking in video Using Deep learning**
-
-
+---
 
 `YOLOv4_custom_v3`: Python script to train and evaluate the yolov4 model
 
