@@ -82,3 +82,7 @@ We discovered different accuracies for distinct computer screen classes by doing
 <p align="justify">
   <img src="https://github.com/shreyaskorde16/YOLOv4-Computer-Screens/blob/master/accuracy_vs_thre_final.png" width="400" height="325" align="right" />
 Multiple object detection in images and videos is a difficult task. We employed the YOLO v4 object detection model and successfully used it to locate and track multiple computer screens in an egocentric video of an emergency services dispatch control room. Based on the accuracy vs. threshold graph shown in the accuracy vs threshold Figure above. we are able to conclude that executing the model at a threshold of 65-70 offered the best results, with fewer miss detections. By doing so, we are able to retrieve critical information far faster than a control room operator. As a result, we may reduce human error in emergency service dispatch and increase the efficiency of those working in the control room. This device identifies computer screens with an accuracy that varies between 98 and 99 percent. If the video contains other computer screens, such as a laptop screen with different information on it or a mobile phone, our model will struggle to track them because it has not been trained to recognize laptop and mobile phone screens.
+
+
+
+Actual Result of Model: __[Click here to watch Multiple screen detection and tracking using YOLOv4](https://youtu.be/KDgIQJb0LTU)__
